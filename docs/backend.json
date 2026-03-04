@@ -1,0 +1,201 @@
+{
+  "entities": {
+    "Route": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Route",
+      "description": "Rutas de aprendizaje",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "level": { "type": "string", "enum": ["basico", "intermedio", "avanzado"] },
+        "description": { "type": "string" },
+        "objectives": { "type": "array", "items": { "type": "string" } },
+        "order": { "type": "number" },
+        "active": { "type": "boolean" }
+      },
+      "required": ["id", "title", "level", "order", "active"]
+    },
+    "Module": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Module",
+      "description": "Módulos dentro de rutas",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "routeId": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "content": { "type": "string" },
+        "order": { "type": "number" }
+      },
+      "required": ["id", "routeId", "title", "order"]
+    },
+    "Exercise": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Exercise",
+      "description": "Ejercicios prácticos",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "moduleId": { "type": "string" },
+        "title": { "type": "string" },
+        "instruction": { "type": "string" },
+        "input_type": { "type": "string" },
+        "expected_output": { "type": "string" },
+        "ai_prompt": { "type": "string" },
+        "difficulty": { "type": "string", "enum": ["basico", "intermedio", "avanzado"] }
+      },
+      "required": ["id", "moduleId", "title", "instruction"]
+    },
+    "CreativeProject": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "CreativeProject",
+      "description": "Proyectos personales de usuarios",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "title": { "type": "string" },
+        "routeId": { "type": "string" },
+        "description": { "type": "string" },
+        "status": { "type": "string", "enum": ["en_proceso", "completado"] },
+        "outputs": {
+          "type": "object",
+          "properties": {
+            "text": { "type": "string" },
+            "media": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "userId", "title", "status", "createdAt"]
+    },
+    "Progress": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Progress",
+      "description": "Progreso del usuario",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "routeId": { "type": "string" },
+        "completedModules": { "type": "array", "items": { "type": "string" } },
+        "completedExercises": { "type": "array", "items": { "type": "string" } },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["id", "userId", "routeId", "updatedAt"]
+    },
+    "PlayExperiment": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "PlayExperiment",
+      "description": "Experimentos y prototipos en Núcleo Play.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "type": { "type": "string", "enum": ["juego", "interaccion", "videoarte", "instalacion_simulada"] },
+        "status": { "type": "string", "enum": ["prototipo", "publicado", "archivado"] },
+        "authorId": { "type": "string" },
+        "description": { "type": "string" },
+        "tools": { "type": "array", "items": { "type": "string" } },
+        "concept": { "type": "string" },
+        "build_url": { "type": "string", "format": "uri" },
+        "template": { "type": "string", "enum": ["malla-sonica", "tejido-audiovisual", "vigilia"] },
+        "embed_type": { "type": "string", "enum": ["iframe", "canvas"] },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "iterations": { "type": "number" },
+        "publishable": { "type": "boolean" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["title", "type", "status", "authorId", "createdAt"]
+    },
+    "PlayIteration": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "PlayIteration",
+      "description": "Versiones y pruebas de un experimento.",
+      "type": "object",
+      "properties": {
+        "experimentId": { "type": "string" },
+        "version": { "type": "string" },
+        "changes": { "type": "string" },
+        "feedback": { "type": "string" },
+        "build_url": { "type": "string", "format": "uri" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["experimentId", "version", "createdAt"]
+    },
+    "PlayChallenge": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "PlayChallenge",
+      "description": "Retos y jams para la comunidad.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "duration_days": { "type": "number" },
+        "tools_allowed": { "type": "array", "items": { "type": "string" } },
+        "active": { "type": "boolean" }
+      },
+      "required": ["title", "description", "active"]
+    },
+    "PlayToVitrina": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "PlayToVitrina",
+      "description": "Puente entre el laboratorio y la vitrina pública.",
+      "type": "object",
+      "properties": {
+        "experimentId": { "type": "string" },
+        "vitrinaProjectId": { "type": "string" },
+        "curated": { "type": "boolean" },
+        "collection": { "type": "string" }
+      },
+      "required": ["experimentId", "vitrinaProjectId"]
+    }
+  },
+  "auth": {
+    "providers": ["password", "anonymous"]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/routes/{routeId}",
+        "definition": { "entityName": "Route", "schema": { "$ref": "#/entities/Route" }, "description": "Rutas de aprendizaje. Public read, admin write.", "params": [{ "name": "routeId", "description": "Unique ID for the route" }] }
+      },
+      {
+        "path": "/modules/{moduleId}",
+        "definition": { "entityName": "Module", "schema": { "$ref": "#/entities/Module" }, "description": "Módulos dentro de rutas. Public read, admin write.", "params": [{ "name": "moduleId", "description": "Unique ID for the module" }] }
+      },
+      {
+        "path": "/exercises/{exerciseId}",
+        "definition": { "entityName": "Exercise", "schema": { "$ref": "#/entities/Exercise" }, "description": "Ejercicios prácticos. Public read, admin write.", "params": [{ "name": "exerciseId", "description": "Unique ID for the exercise" }] }
+      },
+      {
+        "path": "/projects_creativo/{projectId}",
+        "definition": { "entityName": "CreativeProject", "schema": { "$ref": "#/entities/CreativeProject" }, "description": "Proyectos personales de usuarios. Owner read/write.", "params": [{ "name": "projectId", "description": "Unique ID for the project" }] }
+      },
+      {
+        "path": "/progress/{progressId}",
+        "definition": { "entityName": "Progress", "schema": { "$ref": "#/entities/Progress" }, "description": "Progreso del usuario. Owner read/write.", "params": [{ "name": "progressId", "description": "Unique ID for the progress entry" }] }
+      },
+      {
+        "path": "/play_experiments/{experimentId}",
+        "definition": { "entityName": "PlayExperiment", "schema": { "$ref": "#/entities/PlayExperiment" }, "description": "Experimentos y prototipos. El autor puede escribir.", "params": [{ "name": "experimentId", "description": "Unique ID for the experiment" }] }
+      },
+      {
+        "path": "/play_iterations/{iterationId}",
+        "definition": { "entityName": "PlayIteration", "schema": { "$ref": "#/entities/PlayIteration" }, "description": "Versiones y pruebas de un experimento. El autor puede escribir.", "params": [{ "name": "iterationId", "description": "Unique ID for the iteration" }] }
+      },
+      {
+        "path": "/play_challenges/{challengeId}",
+        "definition": { "entityName": "PlayChallenge", "schema": { "$ref": "#/entities/PlayChallenge" }, "description": "Retos y jams. Solo admin write.", "params": [{ "name": "challengeId", "description": "Unique ID for the challenge" }] }
+      },
+      {
+        "path": "/play_to_vitrina/{id}",
+        "definition": { "entityName": "PlayToVitrina", "schema": { "$ref": "#/entities/PlayToVitrina" }, "description": "Puente Lab -> Museo. Solo admin write.", "params": [{ "name": "id", "description": "Unique ID for the mapping" }] }
+      }
+    ],
+    "reasoning": "This structure implements the Núcleo Creativo v2.0 roadmap and the new Núcleo Play lab. It separates learning content (routes, modules, exercises) into publicly readable collections with restricted admin-only writes. User-specific data (projects, progress) is stored in top-level collections, with ownership enforced by security rules checking a `userId` field. The new `play_*` collections support the lab functionality, allowing users to create experiments and iterations, while admins manage challenges and the publishing pipeline."
+  }
+}
+
+    
