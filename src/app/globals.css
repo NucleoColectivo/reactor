@@ -1,0 +1,336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 4%; /* #0A0A0A */
+    --foreground: 0 0% 98%;
+    
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 54 96% 53%; /* #FAFF0F - Intense Yellow */
+    --primary-foreground: 0 0% 5%; /* Black */
+    
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 282 83% 57%; /* Purple */
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 30%;
+    --input: 0 0% 10%;
+    --ring: 54 96% 53%;
+
+    --radius: 0rem;
+  }
+ 
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+    
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 0 0% 3%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 54 96% 53%;
+    --primary-foreground: 0 0% 5%;
+    
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 282 83% 57%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 30%;
+    --input: 0 0% 10%;
+    --ring: 54 96% 53%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: radial-gradient(hsl(var(--foreground) / 0.05) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
+  }
+  .highlight-bar {
+    @apply bg-primary p-2 inline-block leading-none text-primary-foreground;
+  }
+  .system-border {
+    @apply border-2 border-foreground/10;
+  }
+  .status-bar {
+    @apply bg-foreground text-background text-xs font-mono uppercase p-2 flex items-center gap-2;
+  }
+  .status-light {
+    @apply w-2 h-2 bg-primary;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  .scanline-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  .scanline-overlay::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+      background-size: 100% 4px;
+      pointer-events: none;
+      z-index: 1;
+      animation: scanline 10s linear infinite;
+  }
+  @keyframes scanline {
+      from { background-position-y: 0; }
+      to { background-position-y: 200px; }
+  }
+  @keyframes pulse {
+    50% {
+      opacity: .5;
+    }
+  }
+
+  .ticket {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    color: white;
+    transition: transform 0.2s;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    background-color: #ef4444; /* red-500 */
+    --notch-size: 4px;
+    --notch-spacing: 14px;
+    
+    -webkit-mask:
+      radial-gradient(circle at 0 50%, transparent var(--notch-size), black calc(var(--notch-size) + 1px)) 0 0 / 100% var(--notch-spacing) repeat-y,
+      radial-gradient(circle at 100% 50%, transparent var(--notch-size), black calc(var(--notch-size) + 1px)) 100% 0 / 100% var(--notch-spacing) repeat-y;
+    
+    mask:
+      radial-gradient(circle at 0 50%, transparent var(--notch-size), black calc(var(--notch-size) + 1px)) 0 0 / 100% var(--notch-spacing) repeat-y,
+      radial-gradient(circle at 100% 50%, transparent var(--notch-size), black calc(var(--notch-size) + 1px)) 100% 0 / 100% var(--notch-spacing) repeat-y;
+  }
+  .ticket:hover {
+      transform: scale(1.05);
+  }
+  .ticket-main {
+    font-family: var(--font-headline);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 0.6rem;
+    padding: 0.4rem 0.5rem 0.4rem calc(0.5rem + var(--notch-size));
+  }
+  .ticket-stub {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px dashed rgba(255,255,255,0.5);
+    font-family: var(--font-mono);
+    font-size: 0.45rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 0.2rem calc(0.2rem + var(--notch-size)) 0.2rem 0.2rem;
+  }
+}
+
+/* Reactor Hero Styles */
+.reactor-container {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  height: calc(100vh - 58px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.reactor-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 7.5rem;
+  line-height: 0.9;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 2rem;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease-out forwards;
+  color: hsl(var(--foreground));
+}
+
+.reactor-title span {
+    position: relative;
+    display: block;
+}
+
+.reactor-title span::before,
+.reactor-title span::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(var(--background));
+    overflow: hidden;
+}
+
+.reactor-title span::before {
+    left: 4px;
+    text-shadow: -4px 0 hsl(var(--primary));
+    animation: glitch-slice-1 3s infinite linear alternate-reverse;
+}
+
+.reactor-title span::after {
+    left: -4px;
+    text-shadow: 4px 0 hsl(var(--accent));
+    animation: glitch-slice-2 3.5s infinite linear alternate-reverse;
+}
+
+.reactor-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 0.12em;
+  color: hsl(var(--primary));
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.reactor-description {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 2.5rem auto 0 auto;
+  color: hsl(var(--foreground) / 0.8);
+  opacity: 0;
+  animation: fadeIn 1s ease-out 2s forwards;
+}
+
+.bracket {
+  color: hsl(var(--primary));
+}
+
+.typed-text {
+  color: hsl(var(--foreground));
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  margin-left: 3px;
+  color: hsl(var(--primary));
+}
+
+.reactor-button {
+    animation: fadeIn 1s ease-out 2.5s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+@keyframes fadeSlideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.reactor-tag::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsla(var(--primary) / 0.2),
+    transparent
+  );
+  animation: scan 8s infinite;
+}
+
+@keyframes scan {
+  0% { left: -100%; }
+  50% { left: 100%; }
+  100% { left: 100%; }
+}
+
+@keyframes glitch-slice-1 {
+  0% { clip-path: inset(35% 0 60% 0); }
+  10% { clip-path: inset(10% 0 85% 0); }
+  20% { clip-path: inset(75% 0 5% 0); }
+  30% { clip-path: inset(45% 0 50% 0); }
+  40% { clip-path: inset(20% 0 70% 0); }
+  50% { clip-path: inset(90% 0 2% 0); }
+  60% { clip-path: inset(60% 0 35% 0); }
+  70% { clip-path: inset(25% 0 65% 0); }
+  80% { clip-path: inset(5% 0 90% 0); }
+  90% { clip-path: inset(70% 0 10% 0); }
+  100% { clip-path: inset(35% 0 60% 0); }
+}
+
+@keyframes glitch-slice-2 {
+  0% { clip-path: inset(5% 0 92% 0); }
+  10% { clip-path: inset(60% 0 38% 0); }
+  20% { clip-path: inset(22% 0 70% 0); }
+  30% { clip-path: inset(85% 0 5% 0); }
+  40% { clip-path: inset(42% 0 55% 0); }
+  50% { clip-path: inset(10% 0 88% 0); }
+  60% { clip-path: inset(75% 0 15% 0); }
+  70% { clip-path: inset(38% 0 60% 0); }
+  80% { clip-path: inset(55% 0 35% 0); }
+  90% { clip-path: inset(18% 0 78% 0); }
+  100% { clip-path: inset(5% 0 92% 0); }
+}
