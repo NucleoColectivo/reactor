@@ -1,39 +1,10 @@
 
-
 import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Image from 'next/image';
-import { Beaker, FlaskConical, Film, BrainCircuit, ArrowRight, Gamepad2 } from 'lucide-react';
-import { NucleoEditorialLogo } from '@/components/icons/nucleo-editorial-logo';
-
-const externalApps = [
-  {
-    id: 'sintaxis-nc',
-    tagline: 'MEGA DATABASE ONLINE',
-    title: 'SINTAXIS / NC',
-    description: 'ATLAS DE MEDIACIÓN IA: UNA APP QUE CONECTA CONCEPTOS, HERRAMIENTAS E IA PARA PROCESOS CREATIVOS Y SOCIALES.',
-    href: 'https://studio--studio-4229710558-f71da.us-central1.hosted.app/',
-    cta: 'EXPLORAR UNIVERSO',
-    icon: <BrainCircuit className="w-16 h-16 md:w-24 md:h-24 text-black/80" />,
-    borderColor: '!border-primary',
-    buttonBg: 'bg-primary',
-    buttonFg: 'text-primary-foreground'
-  },
-  {
-    id: 'nucleo-editorial',
-    tagline: 'EDITORIAL SYSTEM ONLINE',
-    title: 'NÚCLEO EDITORIAL',
-    description: 'PLATAFORMA DE EXPERIMENTACIÓN EDITORIAL Y PUBLICACIONES HÍBRIDAS PARA LA MEMORIA CULTURAL.',
-    href: 'https://studio--studio-771194584-c2484.us-central1.hosted.app/',
-    cta: 'VISITAR EDITORIAL',
-    icon: <NucleoEditorialLogo className="w-16 h-16 md:w-24 md:h-24" />,
-    borderColor: '!border-primary',
-    buttonBg: 'bg-primary',
-    buttonFg: 'text-primary-foreground'
-  }
-];
+import { Beaker, FlaskConical, Film, Gamepad2 } from 'lucide-react';
 
 const experiments = [
   {
@@ -90,44 +61,13 @@ export default function LaboratorioPage() {
   return (
     <>
       <div className="container py-12 md:py-24">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none highlight-bar">
             LABORATORIO DE CREACIÓN
           </h1>
           <p className="max-w-3xl mx-auto mt-4 text-lg text-muted-foreground font-mono">
             Un espacio para la creación y experimentación con herramientas audiovisuales interactivas y generativas. Aquí es donde las ideas se prueban y se rompen.
           </p>
-        </div>
-        
-        <div className="space-y-8 mb-20">
-            {externalApps.map((app) => (
-                <Link key={app.id} href={app.href} target="_blank" rel="noopener noreferrer" className="block group">
-                    <div className={`system-border border-4 p-4 md:p-8 bg-white ${app.borderColor} transition-all duration-300 group-hover:shadow-[8px_8px_0px_hsl(var(--primary))] group-hover:-translate-x-1 group-hover:-translate-y-1`}>
-                        <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
-                            <div className="flex-1 space-y-4 text-center md:text-left">
-                                <div className="status-bar !p-1 !text-xs !bg-gray-200 !text-black !inline-flex !border-black/20">
-                                    <div className="status-light !bg-primary animate-none"></div>
-                                    <span>{app.tagline}</span>
-                                </div>
-                                <h2 className="font-headline text-2xl md:text-4xl font-bold tracking-tighter text-black">{app.title}</h2>
-                                <div className="flex items-center justify-center md:justify-start">
-                                    <div className="w-1 bg-primary h-12 mr-4"></div>
-                                    <p className="font-mono text-gray-700 max-w-md">{app.description}</p>
-                                </div>
-                                 <div className="inline-flex items-center gap-4 font-mono text-sm text-black group-hover:text-primary">
-                                    <span className="group-hover:underline">{app.cta}</span>
-                                    <span className={`flex items-center justify-center h-8 w-8 rounded-full transition-transform group-hover:scale-110 ${app.buttonBg} ${app.buttonFg}`}>
-                                        <ArrowRight className="h-4 w-4" />
-                                    </span>
-                                </div>
-                            </div>
-                            <div className="shrink-0 transition-transform duration-300 group-hover:scale-105 group-hover:rotate-[-2deg]">
-                                {app.icon}
-                            </div>
-                        </div>
-                    </div>
-                </Link>
-            ))}
         </div>
 
         <div className="text-center mb-12">
