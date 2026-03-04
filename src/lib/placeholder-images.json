@@ -1,0 +1,718 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg-1",
+      "description": "Abstract generative art background 1",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-1.png",
+      "imageHint": "generative art"
+    },
+    {
+      "id": "hero-bg-10",
+      "description": "Abstract generative art background 10",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-10.png",
+      "imageHint": "generative art"
+    },
+    {
+      "id": "hero-bg-2",
+      "description": "Abstract generative art background 2",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-2.png",
+      "imageHint": "abstract tech"
+    },
+    {
+      "id": "hero-bg-3",
+      "description": "Abstract generative art background 3",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-3.png",
+      "imageHint": "digital pattern"
+    },
+    {
+      "id": "hero-bg-4",
+      "description": "Abstract generative art background 4",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-4.png",
+      "imageHint": "ai visualization"
+    },
+    {
+      "id": "hero-bg-5",
+      "description": "Abstract generative art background 5",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-5.png",
+      "imageHint": "data flow"
+    },
+    {
+      "id": "hero-bg-6",
+      "description": "Abstract generative art background 6",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-6.png",
+      "imageHint": "neural net"
+    },
+    {
+      "id": "hero-bg-7",
+      "description": "Abstract generative art background 7",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-7.png",
+      "imageHint": "generative art"
+    },
+    {
+      "id": "hero-bg-8",
+      "description": "Abstract generative art background 8",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-8.png",
+      "imageHint": "generative art"
+    },
+    {
+      "id": "hero-bg-9",
+      "description": "Abstract generative art background 9",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-9.png",
+      "imageHint": "generative art"
+    },
+    {
+      "id": "hero-bg-ar-reality",
+      "description": "Augmented reality interface background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-ar-reality.png",
+      "imageHint": "augmented reality"
+    },
+    {
+      "id": "hero-bg-biology-science",
+      "description": "Biology science background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-biology-science.png",
+      "imageHint": "biology science"
+    },
+    {
+      "id": "hero-bg-cinema-film",
+      "description": "Cinema film background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-cinema-film.png",
+      "imageHint": "cinema film"
+    },
+    {
+      "id": "hero-bg-cosmic-digital",
+      "description": "Cosmic digital background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-cosmic-digital.png",
+      "imageHint": "cosmic digital"
+    },
+    {
+      "id": "hero-bg-cubism-paint",
+      "description": "Cubism paint background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-cubism-paint.png",
+      "imageHint": "cubism paint"
+    },
+    {
+      "id": "hero-bg-dance-flow",
+      "description": "Dance flow background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-dance-flow.png",
+      "imageHint": "dance flow"
+    },
+    {
+      "id": "hero-bg-digital-symphony",
+      "description": "Digital symphony background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-digital-symphony.png",
+      "imageHint": "digital symphony"
+    },
+    {
+      "id": "hero-bg-lab-creative",
+      "description": "Creative lab background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-lab-creative.png",
+      "imageHint": "creative lab"
+    },
+    {
+      "id": "hero-bg-literature-words",
+      "description": "Literature words background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-literature-words.png",
+      "imageHint": "literature words"
+    },
+    {
+      "id": "hero-bg-modernism-paint",
+      "description": "Modernism paint background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-modernism-paint.png",
+      "imageHint": "modernism paint"
+    },
+    {
+      "id": "hero-bg-music-symphony",
+      "description": "Music symphony background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-music-symphony.png",
+      "imageHint": "music symphony"
+    },
+    {
+      "id": "hero-bg-neural-art",
+      "description": "Neural art background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-neural-art.png",
+      "imageHint": "neural art"
+    },
+    {
+      "id": "hero-bg-pencil-paint",
+      "description": "Pencil paint background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-pencil-paint.png",
+      "imageHint": "pencil paint"
+    },
+    {
+      "id": "hero-bg-photography-lens",
+      "description": "Photography lens background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-photography-lens.png",
+      "imageHint": "photography lens"
+    },
+    {
+      "id": "hero-bg-popart-paint",
+      "description": "Pop art paint background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-popart-paint.png",
+      "imageHint": "pop art"
+    },
+    {
+      "id": "hero-bg-sculpture-digital",
+      "description": "Digital sculpture background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-sculpture-digital.png",
+      "imageHint": "digital sculpture"
+    },
+    {
+      "id": "hero-bg-synesthesia-senses",
+      "description": "Synesthesia senses background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-synesthesia-senses.png",
+      "imageHint": "synesthesia senses"
+    },
+    {
+      "id": "hero-bg-textile-weaving",
+      "description": "Textile weaving background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-textile-weaving.png",
+      "imageHint": "textile weaving"
+    },
+    {
+      "id": "hero-bg-theater-drama",
+      "description": "Theater drama background",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/reactor/main/backgrounds/bg-theater-drama.png",
+      "imageHint": "theater drama"
+    },
+    {
+      "id": "showcase-kinefonia",
+      "description": "Kinefonia Generative Art Studio",
+      "imageUrl": "https://images.unsplash.com/photo-1636690498207-d7b393423b9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGFpfGVufDB8fHx8MTc2ODk5MTkxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "generative art"
+    },
+    {
+      "id": "hero-1",
+      "description": "Abstract AI visualization",
+      "imageUrl": "https://images.unsplash.com/photo-1636690498207-d7b393423b9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGFpfGVufDB8fHx8MTc2ODk5MTkxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract ai"
+    },
+    {
+      "id": "workshop-hero",
+      "description": "Creative workshop session",
+      "imageUrl": "https://images.unsplash.com/photo-1579389083046-e3df9c2b3325?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHdvcmtzaG9wfGVufDB8fHx8MTcyMDcxMjM5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "creative workshop"
+    },
+    {
+      "id": "course-basic",
+      "description": "Illustration for basic AI concepts",
+      "imageUrl": "https://images.unsplash.com/photo-1562461089-907f104c2b9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyb2JvdCUyMGxlYXJuaW5nfGVufDB8fHx8MTc2OTA4NTE2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robot learning"
+    },
+    {
+      "id": "course-intermediate",
+      "description": "Illustration for intermediate AI concepts",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2OTA2Njg5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "neural network"
+    },
+    {
+      "id": "course-advanced",
+      "description": "Illustration for advanced AI concepts",
+      "imageUrl": "https://images.unsplash.com/photo-1562187415-6462382445da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhSUyMGFydHxlbnwwfHx8fDE3NjkwMzQ2NjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ai art"
+    },
+    {
+      "id": "module-1",
+      "description": "Question mark",
+      "imageUrl": "https://images.unsplash.com/photo-1724120932030-d8210a77deed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxxdWVzdGlvbiUyMG1hcmt8ZW58MHx8fHwxNzY4OTg0NDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "question mark"
+    },
+    {
+      "id": "module-2",
+      "description": "Glowing brain",
+      "imageUrl": "https://images.unsplash.com/photo-1678931547963-ab9017fc35c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnbG93aW5nJTIwYnJhaW58ZW58MHx8fHwxNzY5MDAzNjg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "glowing brain"
+    },
+    {
+      "id": "module-3",
+      "description": "Abstract representation of poetry and politics",
+      "imageUrl": "https://images.unsplash.com/photo-1588665753198-6dc86a343f87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwb2V0cnklMjBwb2xpdGljc3xlbnwwfHx8fDE3MjE0MjQwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "poetry politics"
+    },
+    {
+      "id": "module-4",
+      "description": "Abstract circuits",
+      "imageUrl": "https://images.unsplash.com/photo-1749006590639-e749e6b7d84c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhYnN0cmFjdCUyMGNpcmN1aXRzfGVufDB8fHx8MTc2OTA3MjIyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract circuits"
+    },
+    {
+      "id": "module-5",
+      "description": "Abstract painting",
+      "imageUrl": "https://images.unsplash.com/photo-1596952896222-0f5ad38e5af0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMHBhaW50aW5nfGVufDB8fHx8MTc2OTA2NDg2MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract painting"
+    },
+    {
+      "id": "module-6",
+      "description": "Scales of justice",
+      "imageUrl": "https://images.unsplash.com/photo-1763336321809-3efd59992de4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzY2FsZXMlMjBqdXN0aWNlfGVufDB8fHx8MTc2ODk5MjQ0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scales justice"
+    },
+    {
+      "id": "module-7",
+      "description": "Gears turning",
+      "imageUrl": "https://images.unsplash.com/photo-1614447428943-52ec0bdbc7aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnZWFycyUyMHR1cm5pbmd8ZW58MHx8fHwxNzY5MDg1MTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "gears turning"
+    },
+    {
+      "id": "module-8",
+      "description": "Stack of books",
+      "imageUrl": "https://images.unsplash.com/photo-1550399105-c4db5fb85c18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Ym9va3MlMjBzdGFja3xlbnwwfHx8fDE3NjkwMjA1NDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "books stack"
+    },
+    {
+      "id": "module-9",
+      "description": "Robot arm",
+      "imageUrl": "https://images.unsplash.com/photo-1637002722490-5f8ceed9774c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb2JvdCUyMGFybXxlbnwwfHx8fDE3NjkwMDMwNTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "robot arm"
+    },
+    {
+      "id": "module-10",
+      "description": "Abstract art",
+      "imageUrl": "https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGFydHxlbnwwfHx8fDE3NjkxMTc1MDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract art"
+    },
+    {
+      "id": "module-11",
+      "description": "AI bias",
+      "imageUrl": "https://images.unsplash.com/photo-1717501218424-b4724c7882bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhaSUyMGJpYXN8ZW58MHx8fHwxNzY5MTU4NTI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ai bias"
+    },
+    {
+      "id": "module-12",
+      "description": "Collaborative robots",
+      "imageUrl": "https://images.unsplash.com/photo-1538491247542-5da27794bc65?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb2xsYWJvcmF0aXZlJTIwcm9ib3RzfGVufDB8fHx8MTc2OTE1ODUyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "collaborative robots"
+    },
+    {
+      "id": "module-13",
+      "description": "Tool recommendation",
+      "imageUrl": "https://images.unsplash.com/photo-1611176682835-871a38ddc9d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b29sJTIwcmVjb21tZW5kYXRpb258ZW58MHx8fHwxNzY5Mzg4ODkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tool recommendation"
+    },
+    {
+      "id": "module-14",
+      "description": "AI voice",
+      "imageUrl": "https://images.unsplash.com/photo-1761311983817-643147b6b30f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhaSUyMHZvaWNlfGVufDB8fHx8MTc2OTE1ODUyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ai voice"
+    },
+    {
+      "id": "module-15",
+      "description": "Magnifying glass over an abstract image",
+      "imageUrl": "https://images.unsplash.com/photo-1595842838219-09065c455c5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYWduaWZ5aW5nJTIwZ2xhc3MlMjBhYnN0cmFjdHxlbnwwfHx8fDE3MjE0MjQyMDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "magnifying glass abstract"
+    },
+    {
+      "id": "res-runway",
+      "description": "RunwayML",
+      "imageUrl": "https://images.unsplash.com/photo-1760893107446-58b108d419d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxydW53YXklMjBjcmVhdGl2ZXxlbnwwfHx8fDE3NjkwODUxNjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "runway creative"
+    },
+    {
+      "id": "res-teachable",
+      "description": "Google Teachable Machine",
+      "imageUrl": "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYWNoaW5lJTIwbGVhcm5pbmd8ZW58MHx8fHwxNzY4OTc2NTg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "machine learning"
+    },
+    {
+      "id": "res-openprocessing",
+      "description": "OpenProcessing",
+      "imageUrl": "https://images.unsplash.com/photo-1765445665883-085301570c87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb2RlJTIwYXJ0fGVufDB8fHx8MTc2OTA4NTE2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "code art"
+    },
+    {
+      "id": "res-huggingface",
+      "description": "HuggingFace Spaces",
+      "imageUrl": "https://images.unsplash.com/photo-1616161560417-66d4db5892ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhaSUyMGZhY2V8ZW58MHx8fHwxNzY5MDI3OTUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ai face"
+    },
+    {
+      "id": "res-artbreeder",
+      "description": "Artbreeder",
+      "imageUrl": "https://images.unsplash.com/photo-1534447677768-be436bb09401?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYW50YXN5JTIwbGFuZHNjYXBlfGVufDB8fHx8MTc2ODk5NTM5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fantasy landscape"
+    },
+    {
+      "id": "res-wikimedia",
+      "description": "Wikimedia Commons",
+      "imageUrl": "https://images.unsplash.com/photo-1576266394503-4999348b5447?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwaG90byUyMGdhbGxlcnl8ZW58MHx8fHwxNzY5MDExNzQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "photo gallery"
+    },
+    {
+      "id": "res-wdl",
+      "description": "Biblioteca Digital Mundial (UNESCO)",
+      "imageUrl": "https://images.unsplash.com/photo-1566935843973-aed0ddcb0ecc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b3JsZCUyMG1hcHxlbnwwfHx8fDE3NjkwODUxNjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "world map"
+    },
+    {
+      "id": "res-mamm",
+      "description": "Museo de Arte Moderno de Medellín (MAMM)",
+      "imageUrl": "https://images.unsplash.com/photo-1558522195-e1201b090344?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcnR8ZW58MHx8fHwxNzY5MDU2MzYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern art"
+    },
+    {
+      "id": "res-banrep",
+      "description": "Banrepcultural",
+      "imageUrl": "https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvbGQlMjBsaWJyYXJ5fGVufDB8fHx8MTc2OTA4NTE2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "old library"
+    },
+    {
+      "id": "res-museo-antioquia",
+      "description": "Museo de Antioquia",
+      "imageUrl": "https://images.unsplash.com/photo-1744317268352-056c993c3b5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtdXNldW0lMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjkwNzcxMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "museum interior"
+    },
+    {
+      "id": "res-cinemateca",
+      "description": "Cinemateca de Bogotá",
+      "imageUrl": "https://images.unsplash.com/photo-1596972812018-6385b8bd3e13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmaWxtJTIwcmVlbHxlbnwwfHx8fDE3NjkwODUxNjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "film reel"
+    },
+    {
+      "id": "res-infolibros",
+      "description": "InfoLibros – Arte PDF",
+      "imageUrl": "https://images.unsplash.com/photo-1600673177369-e02804cefc02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhcnQlMjBib29rfGVufDB8fHx8MTc2OTA4NTE2NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "art book"
+    },
+    {
+      "id": "res-p5js",
+      "description": "p5.js - Creative Coding",
+      "imageUrl": "https://images.unsplash.com/photo-1765445665883-085301570c87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb2RlJTIwYXJ0fGVufDB8fHx8MTc2OTA4NTE2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "code art"
+    },
+    {
+      "id": "res-canva",
+      "description": "Canva",
+      "imageUrl": "https://images.unsplash.com/photo-1545235617-7a424c1a60cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx1aSUyMGRlc2lnbnxlbnwwfHx8fDE3NjkwODg1MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ui design"
+    },
+    {
+      "id": "res-elevenlabs",
+      "description": "ElevenLabs",
+      "imageUrl": "https://images.unsplash.com/photo-1761311983817-643147b6b30f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhaSUyMHZvaWNlfGVufDB8fHx8MTc2OTE1ODUyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ai voice"
+    },
+    {
+      "id": "res-chatgpt",
+      "description": "ChatGPT",
+      "imageUrl": "https://images.unsplash.com/photo-1678995637406-1ca9bdf03817?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhaSUyMGNoYXR8ZW58MHx8fHwxNzY5MDg5NjQ0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ai chat"
+    },
+    {
+      "id": "res-scratch",
+      "description": "Scratch",
+      "imageUrl": "https://images.unsplash.com/photo-1617624969334-4dae836780cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb2RpbmclMjBibG9ja3N8ZW58MHx8fHwxNzY5MTU4NTI1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coding blocks"
+    },
+    {
+      "id": "res-midjourney",
+      "description": "Midjourney",
+      "imageUrl": "https://images.unsplash.com/photo-1678493399046-5dd24b334547?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGltYWdlJTIwZ2VuZXJhdGlvbnxlbnwwfHx8fDE3NjkwODg1MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract image"
+    },
+    {
+      "id": "res-europeana",
+      "description": "Europeana",
+      "imageUrl": "https://images.unsplash.com/photo-1581578332156-11f8b417c8a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxldXJvcGVhbiUyMGN1bHR1cmV8ZW58MHx8fHwxNzY5MDk1MjYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "european culture"
+    },
+    {
+      "id": "res-aiva",
+      "description": "AIVA",
+      "imageUrl": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtdXNpYyUyMGNvbXBvc2l0aW9ufGVufDB8fHx8MTc2OTA5NTI2MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "music composition"
+    },
+    {
+      "id": "res-gemini",
+      "description": "Google Gemini",
+      "imageUrl": "https://images.unsplash.com/photo-1636690513351-0af1763f6237?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhaSUyMGFic3RyYWN0fGVufDB8fHx8MTc2OTA1NjYyOXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ai abstract"
+    },
+    {
+      "id": "res-deepseek",
+      "description": "DeepSeek",
+      "imageUrl": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhaSUyMGNvZGV8ZW58MHx8fHwxNzY5MTQ0NzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ai code"
+    },
+    {
+      "id": "res-figma",
+      "description": "Figma",
+      "imageUrl": "https://images.unsplash.com/photo-1545235617-7a424c1a60cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx1aSUyMGRlc2lnbnxlbnwwfHx8fDE3NjkwODg1MzB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ui design"
+    },
+    {
+      "id": "res-miro",
+      "description": "Miro",
+      "imageUrl": "https://images.unsplash.com/photo-1595013694368-aab1b4f70dcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb2xsYWJvcmF0aW9uJTIwYm9hcmR8ZW58MHx8fHwxNzY5MTQ0NzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "collaboration board"
+    },
+    {
+      "id": "res-archive",
+      "description": "Internet Archive",
+      "imageUrl": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaWdpdGFsJTIwbGlicmFyeXxlbnwwfHx8fDE3NjkxMDM2MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital library"
+    },
+    {
+      "id": "res-keras",
+      "description": "Keras",
+      "imageUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxuZXVyYWwlMjBuZXR3b3JrfGVufDB8fHx8MTc2OTA2Njg5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "neural network"
+    },
+    {
+      "id": "showcase-el-vacio",
+      "description": "El Vacío Immersive Experience",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/El%20vacio_1.png",
+      "imageHint": "immersive experience"
+    },
+    {
+      "id": "showcase-gravedad-sonora",
+      "description": "Sonido y Gravedad Project",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/Sonido%20y%20gravedad_01.png",
+      "imageHint": "sound gravity"
+    },
+    {
+      "id": "showcase-malla-sonica",
+      "description": "Malla Sonica Project",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/malla%205_4.png",
+      "imageHint": "sound mesh"
+    },
+    {
+      "id": "showcase-aves-ia",
+      "description": "AI bird illustration",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/carlos_londor_/nuevo_02.png",
+      "imageHint": "ai bird"
+    },
+    {
+      "id": "showcase-cuerpo-interactivo",
+      "description": "Cuerpo Interactivo experience",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/cuerpo%20interactivo_02.png",
+      "imageHint": "interactive body"
+    },
+    {
+      "id": "showcase-fluir-micro",
+      "description": "Micro particle flow",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/fluir_de_lo_micro_005.png",
+      "imageHint": "microscopic flow"
+    },
+    {
+      "id": "showcase-fluir-live-act",
+      "description": "Fluir de lo Micro Live Act",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/sesiones_em_conf_06.png",
+      "imageHint": "live performance"
+    },
+    {
+      "id": "showcase-trailer-25-min",
+      "description": "Trailer Faltan 25 min",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/carlos_londor_/FALTAN%2025%20MIN.png",
+      "imageHint": "movie trailer"
+    },
+    {
+      "id": "lab-malla-sonica",
+      "description": "Interactive sonic mesh",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/malla%205_4.png",
+      "imageHint": "sound mesh"
+    },
+    {
+      "id": "lab-tejido-audiovisual",
+      "description": "VJ style audiovisual experience",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/Sonido%20y%20gravedad_01.png",
+      "imageHint": "sound gravity"
+    },
+    {
+      "id": "lab-vigilia",
+      "description": "AI surveillance art project",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/imagen/cuerpo%20interactivo_02.png",
+      "imageHint": "interactive body"
+    },
+    {
+      "id": "showcase-nucleobots-1",
+      "description": "NucleoBots AI interface screenshot 1",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/nucleobotsIa/nucleobotsIa_1.png",
+      "imageHint": "ai chat"
+    },
+    {
+      "id": "showcase-nucleobots-2",
+      "description": "NucleoBots AI interface screenshot 2",
+      "imageUrl": "https://raw.githubusercontent.com/NucleoColectivo/NUCLEO/main/nucleobotsIa/nucleobotsIa_2.png",
+      "imageHint": "ai interface"
+    },
+    {
+      "id": "enigma-hero",
+      "description": "Abstract brain visualization",
+      "imageUrl": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGJyYWlufGVufDB8fHx8MTc2OTA3OTU0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract brain"
+    },
+    {
+      "id": "enigma-map",
+      "description": "Brain network visualization",
+      "imageUrl": "https://images.unsplash.com/photo-1515150844422-a0d116f821d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YnJhaW4lMjBuZXR3b3JrfGVufDB8fHx8MTc2OTA1MDE3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brain network"
+    },
+    {
+      "id": "ethics-car",
+      "description": "Abstract self-driving car interface",
+      "imageUrl": "https://images.unsplash.com/photo-1633886121403-49a5d3e09fb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMHNlbGYtZHJpdmluZyUyMGNhcnxlbnwwfHx8fDE3MjE0OTE0MTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract self-driving car"
+    },
+    {
+      "id": "ethics-video-philosophy",
+      "description": "Abstract image representing AI and philosophy",
+      "imageUrl": "https://images.unsplash.com/photo-1502570042444-3261a8f94e92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMHBoaWxvc29waHl8ZW58MHx8fHwxNzIyNDU4MzYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract philosophy"
+    },
+    {
+      "id": "ethics-video-bias",
+      "description": "Abstract image representing AI bias",
+      "imageUrl": "https://images.unsplash.com/photo-1633989464081-16881d3450e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbGdvcml0aG0lMjBiaWFzfGVufDB8fHx8MTcyMjQ1ODQ5OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "algorithm bias"
+    },
+    {
+      "id": "ethics-video-neuro",
+      "description": "Abstract image representing neuro-rights",
+      "imageUrl": "https://images.unsplash.com/photo-1617791160536-598cf32026fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGJyYWlufGVufDB8fHx8MTc2OTA3OTU0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract brain"
+    },
+    {
+      "id": "ethics-video-design",
+      "description": "Abstract image representing responsible design",
+      "imageUrl": "https://images.unsplash.com/photo-1558655146-364adaf1fcc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxyZXNwb25zaWJsZSUyMGRlc2lnbnxlbnwwfHx8fDE3MjI0NTg2OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "responsible design"
+    },
+    {
+      "id": "ethics-video-debate",
+      "description": "Abstract image representing debate",
+      "imageUrl": "https://images.unsplash.com/photo-1604537529428-15bcbeecfe4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRlYmF0ZXxlbnwwfHx8fDE3MjI0NTg3NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract debate"
+    },
+    {
+      "id": "youtube-content",
+      "description": "Abstract for youtube content",
+      "imageUrl": "https://images.unsplash.com/photo-1666890665956-ff34ea13c2cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx5b3V0dWJlJTIwdmlkZW98ZW58MHx8fHwxNzcwODgwODUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "youtube video"
+    },
+    {
+      "id": "movie-ex-machina",
+      "description": "Ex Machina movie poster",
+      "imageUrl": "https://image.tmdb.org/t/p/w600_and_h900_face/9goPE2IoMIXxTLWzl7aizwuIiLh.jpg",
+      "imageHint": "sci-fi movie"
+    },
+    {
+      "id": "movie-her",
+      "description": "Her movie poster",
+      "imageUrl": "https://images.justwatch.com/poster/240577622/s718/her.jpg",
+      "imageHint": "romance movie"
+    },
+    {
+      "id": "movie-ai",
+      "description": "A.I. Artificial Intelligence movie poster",
+      "imageUrl": "https://m.media-amazon.com/images/I/61RLPmWIwbL._AC_UF894,1000_QL80_.jpg",
+      "imageHint": "sci-fi movie"
+    },
+    {
+      "id": "movie-i-robot",
+      "description": "I, Robot movie poster",
+      "imageUrl": "https://es.web.img3.acsta.net/pictures/14/04/29/10/40/173570.jpg",
+      "imageHint": "action movie"
+    },
+    {
+      "id": "movie-blade-runner",
+      "description": "Blade Runner movie poster",
+      "imageUrl": "https://image.tmdb.org/t/p/w500/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg",
+      "imageHint": "sci-fi noir"
+    },
+    {
+      "id": "movie-blade-runner-2049",
+      "description": "Blade Runner 2049 movie poster",
+      "imageUrl": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+      "imageHint": "sci-fi noir"
+    },
+    {
+      "id": "movie-transcendence",
+      "description": "Transcendence movie poster",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BOTYwY2MyNTItNWZhZC00MzBlLTg2NTMtYzAyYzM3NDZkZGZjXkEyXkFqcGc@._V1_.jpg",
+      "imageHint": "sci-fi thriller"
+    },
+    {
+      "id": "movie-the-machine",
+      "description": "The Machine movie poster",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTUwMDg1NTk1OV5BMl5BanBnXkFtZTgwMzAyNDczMTE@._V1_FMjpg_UX1000_.jpg",
+      "imageHint": "sci-fi movie"
+    },
+    {
+      "id": "movie-chappie",
+      "description": "Chappie movie poster",
+      "imageUrl": "https://es.web.img3.acsta.net/pictures/15/02/11/13/01/485703.jpg",
+      "imageHint": "sci-fi action"
+    },
+    {
+      "id": "movie-ghost-in-the-shell",
+      "description": "Ghost in the Shell (1995) movie poster",
+      "imageUrl": "https://i.pinimg.com/736x/67/1c/07/671c076709ea7983c213f8ff3293b9b3.jpg",
+      "imageHint": "anime cyberpunk"
+    },
+    {
+      "id": "movie-ghost-in-the-shell-2017",
+      "description": "Ghost in the Shell (2017) movie poster",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BOGQ5OTJkYjUtNGVhYi00ZjNhLWE1ODAtM2E3NGQ3MDMyMjhiXkEyXkFqcGc@._V1_.jpg",
+      "imageHint": "sci-fi action"
+    },
+    {
+      "id": "movie-automata",
+      "description": "Automata movie poster",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BZmI3YWM1MjUtYTkxNi00NDI3LWEwNTgtNWVlNDc0ZmE1MjE0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "imageHint": "sci-fi movie"
+    },
+    {
+      "id": "movie-upgrade",
+      "description": "Upgrade movie poster",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMzgzMzZlYzItNjM0OC00ZWQ3LWJmMzMtMDE2ZTg4MmFkYjhjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "imageHint": "sci-fi horror"
+    },
+    {
+      "id": "movie-i-am-mother",
+      "description": "I Am Mother movie poster",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTkxMTczNTA4Nl5BMl5BanBnXkFtZTgwNDAyMzgwODM@._V1_FMjpg_UX1000_.jpg",
+      "imageHint": "sci-fi thriller"
+    },
+    {
+      "id": "movie-tau",
+      "description": "Tau movie poster",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BZGYyYjI3NTEtZmIxYS00Y2Q4LWEzNTItYzc4NTRjNzRiY2MzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "imageHint": "sci-fi thriller"
+    },
+    {
+      "id": "movie-eagle-eye",
+      "description": "Eagle Eye movie poster",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTlkNWIxODUtMzkxZC00MGFkLWEyYjgtODk4OWZmZTIzMmVkXkEyXkFqcGc@._V1_.jpg",
+      "imageHint": "action thriller"
+    },
+    {
+      "id": "movie-2001",
+      "description": "2001: A Space Odyssey movie poster",
+      "imageUrl": "https://artofthemovies.co.uk/cdn/shop/products/IMG_0474_1024x1024@2x.jpg?v=1651081020",
+      "imageHint": "classic sci-fi"
+    },
+    {
+      "id": "movie-wargames",
+      "description": "WarGames movie poster",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BMmM5MDlmZWUtYTE1Mi00M2JiLTk1NzYtMTg0NTdlMzM2N2RkXkEyXkFqcGc@._V1_.jpg",
+      "imageHint": "tech thriller"
+    },
+    {
+      "id": "movie-minority-report",
+      "description": "Minority Report movie poster",
+      "imageUrl": "https://www.originalfilmart.com/cdn/shop/products/Minority_Report_2002_stylea_original_film_art_a_1024x1024.jpg?v=1551788405",
+      "imageHint": "sci-fi action"
+    },
+    {
+      "id": "movie-matrix",
+      "description": "The Matrix movie poster",
+      "imageUrl": "https://m.media-amazon.com/images/M/MV5BNGE1YzI4NzMtZTUxNi00Y2I5LTg2MmQtODE0NThmYTFmMDk0XkEyXkFqcGc@._V1_.jpg",
+      "imageHint": "sci-fi action"
+    },
+    {
+      "id": "ethics-video-mar-espana",
+      "description": "Mar España interview on data privacy",
+      "imageUrl": "https://img.youtube.com/vi/li3RponfRE0/sddefault.jpg",
+      "imageHint": "data privacy"
+    }
+  ]
+}
